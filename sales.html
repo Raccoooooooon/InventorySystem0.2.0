@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales - Rice Store Inventory System</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!-- Font Awesome -->
+</head>
+<body>
+  <div class="main-container">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+        <li><a href="Inventory.html"><i class="fas fa-boxes"></i> <span>Inventory</span></a></li>
+        <li><a href="sales.html"><i class="fas fa-shopping-cart"></i> <span>Sales</span></a></li>
+        <li><a href="reports.html"><i class="fas fa-chart-line"></i> <span>Reports</span></a></li>
+      </ul>
+    </aside>
+    <div class="content">
+      <div class="container">
+        <h1>SALES</h1>
+        <form id="salesForm">
+          <input type="text" id="saleItemName" placeholder="Rice Type Sold" required />
+          <input type="number" id="saleQuantity" placeholder="Quantity Sold (kg)" required />
+          <input type="number" id="salePrice" placeholder="Selling Price per kg" required />
+          <button type="submit">Add Sale</button>
+        </form>
+
+        <table>
+          <thead>
+            <tr>  
+              <th>Rice Type</th>
+              <th>Quantity Sold (kg)</th>
+              <th>Selling Price per kg</th>
+              <th>Total Sale Value</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="salesTable">
+            <!-- Sales rows will appear here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="sales.js"></script>
+</body>
+</html>

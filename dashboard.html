@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Rice Store Inventory System</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Sidebar Menu -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="Inventory.html">Inventory</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content Section -->
+    <div class="content">
+      <div class="container">
+        <h1>DASHBOARD</h1>
+
+        <!-- Summary Section -->
+        <div class="summary-section">
+          <div class="summary-box">
+            <h2>Total Inventory</h2>
+            <p id="inventoryWeight">0 kg</p>
+          </div>
+          <div class="summary-box">
+            <h2>Sold</h2>
+            <p id="quantitySold">0 kg</p>
+          </div>
+          <div class="summary-box">
+            <h2>Available Stocks</h2>
+            <p id="availableStocks">0 kg</p>
+          </div>
+        </div>
+
+        <!-- Tables Section -->
+        <div>
+          <h2>Earn</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Earn (₱)</th>
+              </tr>
+            </thead>
+            <tbody id="earnTable">
+              <!-- Earn value will be dynamically added here -->
+            </tbody>
+          </table>
+
+          <h2>Total Value in Inventory</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Total Value (₱)</th>
+              </tr>
+            </thead>
+            <tbody id="inventoryTable">
+              <!-- Total value will be dynamically added here -->
+            </tbody>
+          </table>
+
+          <h2>Total Sale Value in Sales</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Total Sale Value (₱)</th>
+              </tr>
+            </thead>
+            <tbody id="salesTable">
+              <!-- Total sale value will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
